@@ -48,6 +48,22 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* 简化的头部样式 */
+.simple-header {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 0 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.simple-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #4a89dc;
+}
+
 .subtitle {
     font-size: 1.3rem;
     opacity: 0.9;
@@ -57,6 +73,18 @@ header h1 {
 /* 主要内容区域 */
 main {
     margin-bottom: 60px;
+}
+
+.section-intro {
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #555;
+    border-left: 3px solid #4a89dc;
+    padding-left: 15px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 section {
@@ -89,10 +117,12 @@ h2 i {
 
 h3 {
     color: #5a6270;
-    margin: 20px 0 15px;
+    margin: 35px 0 20px;
     font-size: 1.4rem;
     display: flex;
     align-items: center;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
 }
 
 h3 i {
@@ -109,11 +139,11 @@ h4 {
 /* 时间线样式 */
 .timeline {
     position: relative;
-    margin: 20px 0 30px;
+    margin: 25px 0 40px;
 }
 
 .timeline-item {
-    padding: 0 0 25px 25px;
+    padding: 0 0 35px 25px;
     position: relative;
     border-left: 2px solid #4a89dc;
     margin-left: 10px;
@@ -227,6 +257,13 @@ h4 {
 }
 
 /* 联系方式 */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -241,6 +278,8 @@ h4 {
     background-color: #f8f9fa;
     border-radius: 8px;
     transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .contact-item:hover {
